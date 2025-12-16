@@ -1,0 +1,13 @@
+rag-pdf-qa/
+│
+├── app.py                           # Main Streamlit application
+├── .env                             # Environment variables (API keys)
+├── requirements.txt                 # Python dependencies
+│
+├── utils/
+│   ├── __init__.py                  # Makes utils a Python package (empty file)
+│   ├── document_processor.py       # PDF loading and chunking utilities
+│   ├── vector_store.py              # Pinecone and embeddings utilities
+│   └── rag_chain.py                 # RAG chain and LLM integration
+│
+└── tests/                           # For test PDFs (optional)
