@@ -24,17 +24,29 @@ This ensures **zero hallucination** and **strict document grounding**.
 ## 🧠 Architecture (RAG Pipeline)
 
 PDF Upload
+
 ↓
+
 Text Extraction
+
 ↓
+
 Chunking (with overlap)
+
 ↓
+
 Gemini Embeddings
+
 ↓
+
 Vector Similarity Search
+
 ↓
+
 Context Injection
+
 ↓
+
 Gemini Response Generation
 
 
@@ -72,10 +84,15 @@ Gemini Response Generation
 
 rag-pdf-chatbot/
 │
+
 ├── chatbot.py # Main Streamlit application
+
 ├── requirements.txt # Project dependencies
+
 ├── .gitignore # Ignored files (.env, venv, etc.)
+
 ├── README.md # Project documentation
+
 └── .env # API key (NOT pushed to Git)
 
 
@@ -104,6 +121,7 @@ GEMINI_API_KEY=your_api_key_here
 streamlit run <file name>
 The app will open in your browser.
 
+
 🧪 How to Use
 
 1. Open the application
@@ -117,6 +135,7 @@ If a question is outside the document scope, the chatbot will respond profession
 
 "I’m unable to answer this question as it falls outside the scope of the uploaded document."
 
+
 📊 Debugging Output (Terminal)
 
 For mentor review and debugging, the following are printed in terminal:
@@ -127,6 +146,7 @@ For mentor review and debugging, the following are printed in terminal:
 
 This improves traceability and transparency.
 
+
 🚀 Future Enhancements
 
 * Vector database integration (FAISS / ChromaDB)
@@ -136,11 +156,18 @@ This improves traceability and transparency.
 * Cloud deployment
 
 👨‍💻 Author
+
 Vasuki A
+
 vasukiarul27@gmail.com
+
 AI / ML Engineer Intern
 
+https://www.linkedin.com/posts/vasuki27_ai-generativeai-rag-activity-7406694458991439873-4oHl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFWofHABP5vZ1q4SVksdeQ_qxpl9ilnOKXM
+
+
 📜 License
+
 This project is created for learning and internship evaluation purposes.
 
 ---
